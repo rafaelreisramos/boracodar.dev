@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Product Card" src=".github/cover-desafio-02.png" />
+    <img alt="Product Card" src="../.github/cover-desafio-02.png" />
 </h1>
 
 <br>
