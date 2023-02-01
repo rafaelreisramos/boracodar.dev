@@ -3,3 +3,4 @@ Códigos resposta dos desafios propostos pela [Rocketseat](https://www.rocketsea
 - Desafio 01 - Audio player
 - [Desafio 02 - Product Card](desafio-02_product-card/README.md)
 - [Desafio 03 - Buttons and Cursors](desafio-03_button-docs/README.md)
+- [Desafio 04 - Chat](desafio-04_chat/README.md)

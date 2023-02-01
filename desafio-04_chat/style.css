@@ -1,0 +1,312 @@
+:root {
+  --violet: #633bbc;
+  --light-green: #00b37e;
+  --green: #07847e;
+  --off-white: #e1e1e6;
+  --bg: #1e1e1e;
+  --bg-app: #1a1924;
+  --bg-input: #282843;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body * {
+  color: var(--off-white);
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+body {
+  display: flex;
+  background-color: var(--bg);
+  max-width: 102.4rem;
+  margin: 0 auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+  padding: 3.2rem 7.2rem;
+  margin: 3.2rem auto;
+  background: var(--bg-app);
+}
+
+.app__footer {
+  margin-top: auto;
+  background: var(--bg-input);
+  max-height: 8rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.profile__photo {
+  display: block;
+  height: 4.8rem;
+  width: 4.8rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile__photo--broken {
+  border: 0.1rem solid gray;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.profile__name {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.profile__status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.profile__status--online {
+  color: var(--light-green);
+}
+
+.status-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.status-icon--online {
+  fill: var(--light-green);
+}
+
+.app__chat {
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 4.2rem; // 1.4rem + 4.2rem = 5.6rem (figma layout)
+}
+
+.app__chat-date {
+  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.app__chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages--width {
+  max-width: 70%;
+}
+
+.messages--left {
+  align-items: flex-start;
+  align-self: start;
+}
+
+.messages--right {
+  align-items: flex-end;
+  align-self: end;
+}
+
+.messages__time {
+  margin-bottom: 1rem;
+}
+
+.messages__sentence {
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 1.4rem;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.messages__sentence--right {
+  background: var(--green);
+}
+
+.messages__sentence--left {
+  background: var(--violet);
+}
+
+.messages__sentence--first {
+  margin-top: 0;
+}
+
+.messages__sentence--first-left {
+  border-top-left-radius: 0;
+}
+
+.messages__sentence--first-right {
+  border-top-right-radius: 0;
+}
+
+.footer {
+  display: flex;
+  padding: 1.4rem 2.4rem;
+  gap: 1rem;
+  border-radius: 2.6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  border: none;
+  outline: none;
+  resize: none;
+  background: inherit;
+  max-height: 5.2rem;
+  height: 1.4rem;
+  flex: 1;
+}
+
+.input::-webkit-scrollbar {
+  width: 0;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.ph-x-bold,
+.ph-paper-plane-right-fill {
+  font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 0.4rem var(--app-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-input);
+}
+
+@media screen and (max-width: 1024px) {
+  .messages--width {
+    max-width: 70%;
+  }
+
+  .app {
+    padding: 3.2rem 7.2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .messages--width {
+    max-width: 75%;
+  }
+
+  .app {
+    padding: 3.2rem 6.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .messages--width {
+    max-width: 80%;
+  }
+
+  .app {
+    padding: 3.2rem 5.6rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .messages--width {
+    max-width: 85%;
+  }
+
+  .app {
+    padding: 3.2rem 4.8rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .messages--width {
+    max-width: 90%;
+  }
+
+  .app {
+    padding: 3.2rem 4rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .messages--width {
+    max-width: 95%;
+  }
+
+  .app {
+    padding: 3.2rem 3.2rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}

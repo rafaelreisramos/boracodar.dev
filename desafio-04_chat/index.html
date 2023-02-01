@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="./script.js" defer></script>
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="profile">
+          <img
+            class="profile__photo"
+            src="https://source.unsplash.com/random/100x100"
+            onError="this.onerror=null;this.src='./assets/profile.svg';this.classList.add('profile__photo--broken')"
+            alt="profile photo"
+          />
+
+          <div class="profile__info">
+            <strong class="profile__name">Cecília Sassaki</strong>
+            <span class="profile__status profile__status--online">
+              <svg
+                class="status-icon status-icon--online"
+                width="8"
+                height="8"
+                fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="4" cy="4" r="4" />
+              </svg>
+              Online
+            </span>
+          </div>
+        </div>
+
+        <button class="btn" onClick="window.location.reload(true)">
+          <i class="ph-x-bold"></i>
+        </button>
+      </header>
+
+      <main class="app__chat">
+        <span class="app__chat-date">Hoje 11:30</span>
+
+        <div class="app__chat-messages">
+          <div class="messages messages--width messages--left">
+            <span class="messages__time">Cecília - 11:30</span>
+            <p
+              class="messages__sentence messages__sentence--first messages__sentence--first-left messages__sentence--left"
+            >
+              Tive uma ideia incrível para um projeto! 😍
+            </p>
+          </div>
+
+          <div class="messages messages--width messages--right">
+            <span class="messages__time">Você - 11:30</span>
+            <p
+              class="messages__sentence messages__sentence--first messages__sentence--first-right messages__sentence--right"
+            >
+              Sério? Me conta mais.
+            </p>
+          </div>
+
+          <div class="messages messages--width messages--left">
+            <span class="messages__time">Cecília - 11:34</span>
+            <p
+              class="messages__sentence messages__sentence--first messages__sentence--first-left messages__sentence--left"
+            >
+              E se a gente fizesse um chat moderno e responsivo em apenas uma
+              semana?
+            </p>
+            <p class="messages__sentence messages__sentence--left">
+              Será que o Mayk topa?
+            </p>
+          </div>
+
+          <div class="messages messages--width messages--right">
+            <span class="messages__time">Você - 11:36</span>
+            <p
+              class="messages__sentence messages__sentence--first messages__sentence--first-right messages__sentence--right"
+            >
+              Claro!
+            </p>
+            <!-- <p class="messages__sentence messages__sentence--right">
+              #boraCodar! 🚀
+            </p> -->
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer app__footer">
+        <textarea class="input" placeholder="Digite sua mensagem"></textarea>
+
+        <button class="btn">
+          <i class="ph-paper-plane-right-fill"></i>
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>
