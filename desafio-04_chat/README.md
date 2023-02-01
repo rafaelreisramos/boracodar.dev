@@ -16,7 +16,7 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 - Javascript:
   - tratamento de erro e imagem de fallback no loading diretamente na tag `<img>` com `onerror`
   - emulação de uma conversação de envio e recebimento de mensagens com inclusão de elementos html na DOM.
-  - `listener` de ajuste automático da altura da `textarea`
+  - `listener` de [ajuste automático da altura da `textarea`](https://www.youtube.com/watch?v=Yor9Y73M764).
 
 ## 🔖 Layout
 
