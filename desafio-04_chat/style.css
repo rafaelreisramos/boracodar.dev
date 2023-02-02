@@ -98,21 +98,25 @@ body {
 
 .profile__status {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.4rem;
+  --status-color: var(--light-green);
+}
+
+.profile__status::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  border-radius: 50%;
 }
 
 .profile__status--online {
-  color: var(--light-green);
+  color: var(--status-color);
 }
 
-.status-icon {
-  width: 0.8rem;
-  height: 0.8rem;
-}
-
-.status-icon--online {
-  fill: var(--light-green);
+.profile__status--online::before {
+  background-color: var(--status-color);
 }
 
 .app__chat {
