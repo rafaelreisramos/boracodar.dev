@@ -87,13 +87,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  align-items: flex-start;
 }
 
 .profile__name {
   font-size: 1.6rem;
   line-height: 2rem;
-  font-weight: bold;
 }
 
 .profile__status {
@@ -120,9 +118,7 @@ body {
 }
 
 .app__chat {
-  width: 100%;
   overflow-y: auto;
-  margin-bottom: 4.2rem; // 1.4rem + 4.2rem = 5.6rem (figma layout)
 }
 
 .app__chat-date {
@@ -144,11 +140,6 @@ body {
 
 .messages--width {
   max-width: 70%;
-}
-
-.messages--left {
-  align-items: flex-start;
-  align-self: start;
 }
 
 .messages--right {
@@ -193,7 +184,6 @@ body {
   gap: 1rem;
   border-radius: 2.6rem;
   align-items: center;
-  justify-content: space-between;
 }
 
 .input {
@@ -212,7 +202,7 @@ body {
 
 .btn {
   background: transparent;
-  border: none;
+  border: 0;
   height: 2rem;
   width: 2rem;
   transition: opacity 0.2s;
