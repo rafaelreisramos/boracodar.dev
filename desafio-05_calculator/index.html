@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="operation">1 + 1</div>
+        <div class="result">
+          <i class="result__equals ph-equals"></i>
+          <span class="result__value">2</span>
+        </div>
+      </div>
+      <div class="keyboard">
+        <button
+          type="button"
+          aria-label="clear entry"
+          class="btn btn--shadow btn--clear-entry"
+        >
+          CE
+        </button>
+        <button type="button" aria-label="clear" class="btn btn--shadow">
+          C
+        </button>
+        <button type="button" aria-label="percent" class="btn btn--shadow">
+          <i class="ph-percent"></i>
+        </button>
+        <button
+          type="button"
+          aria-label="divide"
+          class="btn btn--shadow btn--operation"
+        >
+          <i class="ph-divide"></i>
+        </button>
+        <button type="button" class="btn btn--shadow">7</button>
+        <button type="button" class="btn btn--shadow">8</button>
+        <button type="button" class="btn btn--shadow">9</button>
+        <button
+          type="button"
+          aria-label="multiply"
+          class="btn btn--shadow btn--operation"
+        >
+          <i class="ph-x"></i>
+        </button>
+        <button type="button" class="btn btn--shadow">4</button>
+        <button type="button" class="btn btn--shadow">5</button>
+        <button type="button" class="btn btn--shadow">6</button>
+        <button
+          type="button"
+          aria-label="minus"
+          class="btn btn--shadow btn--operation"
+        >
+          <i class="ph-minus"></i>
+        </button>
+        <button type="button" class="btn btn--shadow">1</button>
+        <button type="button" class="btn btn--shadow">2</button>
+        <button type="button" class="btn btn--shadow">3</button>
+        <button
+          type="button"
+          aria-label="plus"
+          class="btn btn--shadow btn--operation"
+        >
+          <i class="ph-plus"></i>
+        </button>
+        <button type="button" aria-label="change sign" class="btn btn--shadow">
+          <i class="ph-plus-minus"></i>
+        </button>
+        <button type="button" class="btn btn--shadow">0</button>
+        <button type="button" class="btn btn--shadow">,</button>
+        <button
+          type="button"
+          aria-label="equals"
+          class="btn btn--shadow btn--equals"
+        >
+          <i class="ph-equals"></i>
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
