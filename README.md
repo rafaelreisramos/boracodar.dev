@@ -1,7 +1,9 @@
 Códigos resposta dos desafios propostos pela [Rocketseat](https://www.rocketseat.com.br/) em **[boracodar.dev](https://boracodar.dev/)**
 
-- Desafio 01 - Audio player
-- [Desafio 02 - Product Card](desafio-02_product-card/README.md)
-- [Desafio 03 - Buttons and Cursors](desafio-03_button-docs/README.md)
-- [Desafio 04 - Chat](desafio-04_chat/README.md)
-- [Desafio 05 - Calculator](desafio-05_calculator/README.md)
+| #   | Name                | Code                                                                                            | Deploy                                                                                       |
+| :-- | :------------------ | :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| 01  | Music Player        | []()                                                                                            | []()                                                                                         |
+| 02  | Product Card        | [:octocat:](https://github.com/rafaelreisramos/boracodar.dev/tree/main/desafio-02_product-card) | [:checkered_flag:](https://rafaelreisramos.github.io/boracodar.dev/desafio-02_product-card/) |
+| 03  | Buttons and Cursors | [:octocat:](https://github.com/rafaelreisramos/boracodar.dev/tree/main/desafio-03_button-docs)  | [:checkered_flag:](https://rafaelreisramos.github.io/boracodar.dev/desafio-03_button-docs/)  |
+| 04  | Chat                | [:octocat:](https://github.com/rafaelreisramos/boracodar.dev/tree/main/desafio-04_chat)         | [:checkered_flag:](https://rafaelreisramos.github.io/boracodar.dev/desafio-04_chat/)         |
+| 04  | Calculator          | [:octocat:](https://github.com/rafaelreisramos/boracodar.dev/tree/main/desafio-02_product-card) | [:checkered_flag:](https://rafaelreisramos.github.io/boracodar.dev/desafio-05_calculator/)   |
