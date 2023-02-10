@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+    <title>Boarding Pass</title>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1 class="app__title">Cartão de embarque</h1>
+      </header>
+      <main class="boarding-pass">
+        <section class="flight border border--top border--notched-bottom">
+          <div class="flight__info">
+            <div class="flex flex--col">
+              <span>Voo</span>
+              <span class="important-info">RS995</span>
+            </div>
+
+            <div class="flight__date">
+              <span>Data</span>
+              <time class="important-info" datetime="2023-05-23"
+                >23/05/2023</time
+              >
+            </div>
+          </div>
+
+          <div class="flight__itinerary">
+            <div class="flight__departure">
+              <span>São Paulo, Brasil</span>
+              <strong class="airport">GRU</strong>
+              <time datetime="2023-05-23T17:00:00.000-03:00">17:00</time>
+            </div>
+
+            <iconify-icon
+              class="flight__icon"
+              icon="ion:airplane"
+              width="24"
+            ></iconify-icon>
+
+            <div class="flight__arrival">
+              <span>São Francisco, EUA</span>
+              <strong class="airport">SFO</strong>
+              <time datetime="2023-05-24T04:48:00.000-08:00"
+                >04:48<sup class="next-day">+1</sup></time
+              >
+            </div>
+          </div>
+        </section>
+
+        <hr class="divider" />
+
+        <section class="passenger border border--notched">
+          <div class="passenger__name">
+            <span>Passageiro</span>
+            <strong class="important-info">Rodrigo Terron</strong>
+          </div>
+          <div class="passenger__seat">
+            <span>Assento</span>
+            <strong class="important-info">28A</strong>
+          </div>
+        </section>
+
+        <hr class="divider" />
+
+        <section class="boarding border border--bottom border--notched-top">
+          <div class="boarding__info">
+            <div class="boarding__area">
+              <span>Embarque</span>
+              <mark class="boarding__time"
+                ><time
+                  class="important-info important-info--white"
+                  datetime="2023-05-23T16:15:00.000-03:00"
+                  >16:15</time
+                ></mark
+              >
+
+              <span class="boarding__terminal">Terminal</span>
+              <strong class="important-info">2</strong>
+
+              <span class="boarding__gate">Portão</span>
+              <strong class="important-info">15</strong>
+            </div>
+
+            <div class="boarding__code">
+              <img src="./assets/qr-code.png" alt="QR code" />
+              <span>Grupo de embarque: 3</span>
+            </div>
+          </div>
+
+          <p class="boarding__warning">
+            <strong class="important-info">Atenção: </strong>O portão fecha
+            <time datetime="2023-05-23T16:45:00.000-03:00">16:45</time>
+          </p>
+        </section>
+      </main>
+      <footer class="footer">
+        Qualquer problema procure o balcão de atendimento da sua companhia aérea
+      </footer>
+    </div>
+  </body>
+</html>

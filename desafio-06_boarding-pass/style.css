@@ -1,0 +1,226 @@
+:root {
+  --border-notch-radius: 2.4rem;
+  --width: 32.7rem;
+  --bg-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) fixed
+    no-repeat;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.app {
+  margin: auto;
+  width: var(--width);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.app__title {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+
+.boarding-pass {
+  width: 100%;
+  border-radius: 2.4rem;
+}
+
+.flight,
+.passenger,
+.boarding {
+  padding: 2.4rem 3.2rem;
+  background-color: var(--bg-color);
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.border {
+  border-radius: 2.4rem;
+}
+
+.divider {
+  width: calc(var(--width) - 2 * var(--border-notch-radius));
+  margin-inline: auto;
+  border: 0;
+  border-bottom: 0.1rem dashed rgba(0, 0, 0, 0.32);
+  background: var(--bg-color);
+}
+
+.important-info {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.important-info--white {
+  color: #ffffff;
+}
+
+.flight {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.flight__info,
+.passenger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flight__number,
+.flight__departure,
+.boarding__area,
+.passenger__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight__date,
+.flight__arrival {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.flight__itinerary {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight__icon {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next-day {
+  line-height: 0;
+}
+
+.airport {
+  font-size: 4rem;
+  line-height: 4.7rem;
+  font-weight: 500;
+}
+
+.passenger__seat {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.boarding {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.boarding__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boarding__time {
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+  background: #633bbc;
+}
+
+.boarding__terminal,
+.boarding__gate {
+  margin-top: 1.6rem;
+}
+
+.boarding__code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boarding__warning {
+  align-self: center;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.footer {
+  text-align: center;
+  line-height: 2.4rem;
+  opacity: 0.64;
+}
+
+@media screen and (width > 768px) {
+  :root {
+    --border-notch-radius: 1.2rem;
+  }
+
+  .border {
+    border-radius: 0;
+  }
+
+  .border--top {
+    border-radius: 2.4rem 2.4rem 0 0;
+  }
+
+  .border--bottom {
+    border-radius: 0 0 2.4rem 2.4rem;
+  }
+
+  .border--notched {
+    background: radial-gradient(circle at top left, transparent 1.2rem, #fff 0),
+      radial-gradient(circle at top right, transparent 1.2rem, #fff 0) top right,
+      radial-gradient(circle at bottom right, transparent 1.2rem, #fff 0) bottom
+        right,
+      radial-gradient(circle at bottom left, transparent 1.2rem, #fff 0) bottom
+        left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+  }
+
+  .border--notched-top {
+    background: radial-gradient(circle at top left, transparent 1.2rem, #fff 0),
+      radial-gradient(circle at top right, transparent 1.2rem, #fff 0) top right;
+    background-size: 51%;
+    background-repeat: no-repeat;
+  }
+
+  .border--notched-bottom {
+    background: radial-gradient(
+          circle at bottom right,
+          transparent 1.2rem,
+          #fff 0
+        )
+        bottom right,
+      radial-gradient(circle at bottom left, transparent 1.2rem, #fff 0) bottom
+        left;
+    background-size: 51%;
+    background-repeat: no-repeat;
+  }
+}
