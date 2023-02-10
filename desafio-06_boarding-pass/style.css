@@ -164,6 +164,10 @@ body {
   align-items: center;
 }
 
+.qr-code {
+  padding: 1rem;
+}
+
 .boarding__warning {
   align-self: center;
   font-size: 1.6rem;
