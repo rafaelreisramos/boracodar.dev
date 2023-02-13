@@ -15,19 +15,21 @@
     <title>Boarding Pass</title>
   </head>
   <body>
-    <div class="app">
+    <div class="flex flex--column items-center app">
       <header>
         <h1 class="app__title">Cartão de embarque</h1>
       </header>
-      <main class="boarding-pass">
-        <section class="flight border border--top border--notched-bottom">
-          <div class="flight__info">
-            <div class="flight__number">
+      <main class="width-full">
+        <section
+          class="flex flex--column gap flight border border--top border--notched-bottom"
+        >
+          <div class="flex justify-between">
+            <div class="flex flex--column">
               <span>Voo</span>
               <span class="important-info">RS995</span>
             </div>
 
-            <div class="flight__date">
+            <div class="flex flex--column items-end">
               <span>Data</span>
               <time class="important-info" datetime="2023-05-23"
                 >23/05/2023</time
@@ -35,20 +37,20 @@
             </div>
           </div>
 
-          <div class="flight__itinerary">
-            <div class="flight__departure">
+          <div class="flex items-center justify-between flight__itinerary">
+            <div class="flex flex--column">
               <span>São Paulo, Brasil</span>
               <strong class="airport">GRU</strong>
               <time datetime="2023-05-23T17:00:00.000-03:00">17:00</time>
             </div>
 
             <iconify-icon
-              class="flight__icon"
+              class="items-center flight__icon"
               icon="ion:airplane"
               width="24"
             ></iconify-icon>
 
-            <div class="flight__arrival">
+            <div class="flex flex--column items-end">
               <span>São Francisco, EUA</span>
               <strong class="airport">SFO</strong>
               <time datetime="2023-05-24T04:48:00.000-08:00"
@@ -60,12 +62,12 @@
 
         <hr class="divider" />
 
-        <section class="passenger border border--notched">
-          <div class="passenger__name">
+        <section class="flex justify-between passenger border border--notched">
+          <div class="flex flex--column">
             <span>Passageiro</span>
             <strong class="important-info">Rodrigo Terron</strong>
           </div>
-          <div class="passenger__seat">
+          <div class="flex flex--column items-end">
             <span>Assento</span>
             <strong class="important-info">28A</strong>
           </div>
@@ -73,9 +75,11 @@
 
         <hr class="divider" />
 
-        <section class="boarding border border--bottom border--notched-top">
-          <div class="boarding__info">
-            <div class="boarding__area">
+        <section
+          class="flex flex--column gap boarding border border--bottom border--notched-top"
+        >
+          <div class="flex items-center justify-between">
+            <div class="flex flex--column">
               <span>Embarque</span>
               <mark class="boarding__time"
                 ><time
@@ -92,7 +96,7 @@
               <strong class="important-info">15</strong>
             </div>
 
-            <div class="boarding__code">
+            <div class="flex flex--column items-center">
               <img class="qr-code" src="./assets/qr-code.svg" alt="QR code" />
               <span>Grupo de embarque: 3</span>
             </div>
