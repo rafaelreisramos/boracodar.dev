@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Web site</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div class="hero__content">
+          <p>FIND YOUR BLOCK</p>
+          <h1 class="hero__title">
+            Encontre os
+            <span class="hero__title--color">melhores blocos</span><br />
+            de carnaval de 2023
+          </h1>
+          <form class="search" role="search">
+            <div class="input-wrapper">
+              <img
+                src="./assets/search.svg"
+                alt="search icon"
+                aria-hidden="true"
+              />
+              <label class="visually-hidden" for="block-name"
+                >Digite o nome do bloco</label
+              >
+              <input
+                type="search"
+                id="block-name"
+                class="input"
+                name="block"
+                placeholder="Pesquise por nome"
+                aria-label="Digite o nome do bloco"
+              />
+            </div>
+            <div class="input-wrapper">
+              <img
+                src="./assets/location.svg"
+                alt="location icon"
+                aria-hidden="true"
+              />
+              <label class="visually-hidden" for="city-select"
+                >Selecione uma cidade</label
+              >
+              <select
+                class="select"
+                id="city-select"
+                name="city"
+                aria-label="Selecione uma cidade"
+              >
+                <option value="">Selecione uma cidade</option>
+                <template id="option-template">
+                  <option value=""></option>
+                </template>
+              </select>
+            </div>
+            <button type="submit" class="search__button">BUSCAR AGORA</button>
+          </form>
+        </div>
+      </header>
+      <main class="content">
+        <header class="content__header">
+          <h2 class="content__title">Blocos recomendados</h2>
+          <div class="radio-group">
+            <input
+              class="radio-button"
+              type="radio"
+              id="lista"
+              name="presentation"
+              checked
+            />
+            <label class="button-label" for="lista">LISTA</label>
+            <input
+              class="radio-button"
+              type="radio"
+              id="mapa"
+              name="presentation"
+            />
+            <label class="button-label" for="mapa">MAPA</label>
+          </div>
+        </header>
+        <div class="content__cards">
+          <template id="card-template">
+            <div class="card">
+              <div class="card__img-wrapper">
+                <img class="skeleton card__img" src="" alt="" />
+              </div>
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p></p>
+                <footer class="card__location">
+                  <img
+                    src="./assets/location.svg"
+                    alt="location icon"
+                    aria-hidden="true"
+                  />
+                  <span></span>
+                </footer>
+              </div>
+            </div>
+          </template>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/slugify@1.6.5/slugify.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

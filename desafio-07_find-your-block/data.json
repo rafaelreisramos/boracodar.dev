@@ -1,0 +1,83 @@
+[
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/b2jkMC95a_8",
+    "img_description": "Foto de um homem de jaqueta vermelha vestindo chapéu preto",
+    "name": "O Python do vovô não sobe mais",
+    "description": "O bloco faz referência a um problema comum entre programadores, que é o fato de que, às vezes, um código simplesmente não funciona.",
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/u2ZhOJhJ3zE",
+    "img_description": "Foto fitas e confetes no chão",
+    "name": "Todo mundo null",
+    "description": "Com o slogan 'Todo Mundo Null', o bloco convida a todos a se livrar de todas as preocupações e estresses do cotidiano, e a viver o presente com alegria e descontração.",
+    "city": "Florianópolis",
+    "state": "SC"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/cCIVkw4K27A",
+    "img_description": "Foto de um grupo de pessoas reunidas na rua",
+    "name": "Hoje dou exception",
+    "description": "Inspirado na cultura do software e da tecnologia, o bloco atrai programadores, desenvolvedores e amantes da tecnologia que querem desconectar do mundo digital e se jogar na folia do carnaval.",
+    "city": "Curitiba",
+    "state": "PR"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/X1OK9of41Ho",
+    "img_description": "Fotografia de foco raso em traje marrom",
+    "name": "Manda Node",
+    "description": "Os foliões, vestidos com fantasias criativas e engraçadas, se juntam a uma multidão animada para celebrar a vida e a alegria do carnaval. Dispa-se e Manda Node.",
+    "city": "Salvador",
+    "state": "BA"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/45ocBSzeyXE",
+    "img_description": "Foto de 3 mulheres em vestidos brancos e azul-petróleo em pé na areia branca durante o dia",
+    "name": "Só no back-end",
+    "description": "Inspirado na cultura do movimento LGBTQIA+, o bloco atrai pessoas de todas as orientações sexuais e que são admiradas por suas formas curvilíneas e pelo orgulho que têm de seus corpos",
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/EFgtRBY0g7E",
+    "img_description": "Foto de um homem na regata vermelha que toca trompete",
+    "name": "Esse anel não é de Ruby",
+    "description": "O anel que é um símbolo de compromisso no relacionamento amoroso. O bloco convida todos a se unirem em uma celebração de amor e diversidade, deixando para trás qualquer preconceito ou discriminação.",
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/R4pxoOXQorY",
+    "img_description": "Foto de 3 mulheres em vestidos florais brancos e pretos dançando na rua durante o dia",
+    "name": "Pimenta no C# dos outros é refresco",
+    "description": "O bloco faz uma brincadeira com o ditado popular de forma irreverente e convida aqueles que querem curtir o carnaval com muito bom humor e diversão.",
+    "city": "Rio de Janeiro",
+    "state": "RJ"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/fIHozNWfcvs",
+    "img_description": "Foto de pessoas rindo na festa",
+    "name": "EnCACHE aqui",
+    "description": "EnCACHE aqui, entra no clima e se divirta sem se preocupar com os padrões e expectativas sociais.",
+    "city": "Porto Alegre",
+    "state": "RS"
+  },
+  {
+    "id": "",
+    "img_url": "https://source.unsplash.com/G7VEYaDm8I0",
+    "img_description": "Foto de uma mulher de top roxo",
+    "name": "Não valho nada mas JAVA li",
+    "description": "A vida é curta demais para não aproveitar cada momento. Não importa o seu status financeiro ou social, no bloco todos são iguais e a única regra é se divertir e fazer amigos.",
+    "city": "São Paulo",
+    "state": "SP"
+  }
+]

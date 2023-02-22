@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.75);
+  background: #1e1e1e;
+}
+
+input,
+select {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 140%;
+  color: #121214;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0.1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 144rem;
+  background: #fffffe;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url('./assets/ilustra-01.png') top left no-repeat,
+    url('./assets/ilustra-02.png') bottom right no-repeat, #f8f8ff;
+}
+
+.hero__content {
+  margin: 10rem auto;
+}
+
+.hero__content p {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #e45858;
+}
+
+.hero__title {
+  margin-top: 1.8rem;
+  font-size: 4.8rem;
+  line-height: 125%;
+}
+
+.hero__title--color {
+  color: #6246ea;
+}
+
+.search {
+  margin-top: 4rem;
+  display: flex;
+  width: fit-content;
+  padding: 4rem;
+  gap: 2.4rem;
+  align-items: center;
+  background: #ffffff;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+}
+
+.search__button {
+  cursor: pointer;
+  padding: 1.2rem 3.2rem;
+  border: none;
+  background: #6246ea;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+
+.search__button:hover {
+  opacity: 0.75;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 34.8rem;
+  padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+  background: #f4f4ff;
+  border-radius: 0.5rem;
+}
+
+.input-wrapper:focus-within {
+  outline: 2px solid #6246ea;
+}
+
+.input,
+.select {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.6rem;
+  color: #7c7c8a;
+  outline: none;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('./assets/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 2.4rem;
+}
+
+.content {
+  padding: 10rem 11.2rem;
+}
+
+.content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__title {
+  font-size: 3.2rem;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 0.6rem;
+}
+
+.radio-button[type='radio'] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+.radio-button:checked + label {
+  color: #ffffff;
+  background: #6246ea;
+}
+
+.button-label {
+  padding: 0.4rem 2.4rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  color: #6246ea;
+}
+
+.content__cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__img-wrapper {
+  position: relative;
+  height: 15.3rem;
+}
+
+.card__img-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(98, 70, 234, 0.2),
+    rgba(98, 70, 234, 0.2)
+  );
+}
+
+.card__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.6rem;
+  gap: 1.6rem;
+}
+
+.card__title {
+  font-size: 2rem;
+}
+
+.card__location {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  gap: 0.8rem;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #c2cfd6;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
