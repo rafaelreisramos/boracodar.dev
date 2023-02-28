@@ -5,11 +5,7 @@ Chart.defaults.font.size = 14
 Chart.defaults.font.family = "'Inter', 'sans-serif'"
 Chart.defaults.font.lineHeight = '160%'
 
-const darkPlum = getComputedStyle(document.documentElement).getPropertyValue(
-  '--dark-plum'
-)
-
-async function createNewRadialProgressChart(ctx, data, plugins) {
+export function createNewRadialProgressChart(ctx, data, plugins) {
   return new Chart(ctx, {
     type: 'doughnut',
     data,
@@ -31,33 +27,21 @@ async function createNewRadialProgressChart(ctx, data, plugins) {
   })
 }
 
-async function createNewBarChart(ctx, gradient) {
+export function createNewBarChart(ctx, data, plugins) {
   return new Chart(ctx, {
     type: 'bar',
-    data: {
-      labels: ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'],
-      datasets: [
-        {
-          data: [39, 115, 76, 159, 129, 120, 69],
-          backgroundColor: gradient,
-          borderRadius: 50,
-          borderSkipped: false,
-          barPercentage: 0.25,
-        },
-      ],
-    },
+    data,
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      borderRadius: 50,
+      borderSkipped: false,
+      barPercentage: 0.25,
       plugins: {
         legend: {
           display: false,
         },
-        baseline: {
-          position: 69,
-          width: 3,
-          color: darkPlum,
-        },
+        ...plugins,
       },
       scales: {
         x: {
@@ -82,7 +66,7 @@ async function createNewBarChart(ctx, gradient) {
   })
 }
 
-function createGradient(ctx, startAngle, startColor, stopColor) {
+export function createGradient(ctx, startAngle, startColor, stopColor) {
   const angle = (reduceToFirstQuadrant(startAngle) * Math.PI) / 180
   const x2 = ctx.canvas.width * Math.cos(angle)
   const y2 = ctx.canvas.height * Math.sin(angle)
@@ -148,5 +132,3 @@ const doughnutBackground = {
 }
 
 Chart.register(baseline, doughnutBackground)
-
-export { createNewBarChart, createNewRadialProgressChart, createGradient }

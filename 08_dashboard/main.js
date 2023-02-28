@@ -55,9 +55,24 @@ const weekSalesGradient = createGradient(
   greenishBlue,
   eletricGreen
 )
+const weekSalesData = {
+  labels: ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'],
+  datasets: [
+    {
+      data: [39, 115, 76, 159, 129, 120, 69],
+      backgroundColor: weekSalesGradient,
+    },
+  ],
+}
 
-Promise.all([
-  createNewRadialProgressChart(salesDoughnut, salesData, doughnutPlugins),
-  createNewRadialProgressChart(revenue, revenueData, doughnutPlugins),
-  createNewBarChart(salesHistogram, weekSalesGradient),
-])
+const baselinePlugin = {
+  baseline: {
+    position: 69,
+    width: 3,
+    color: darkPlum,
+  },
+}
+
+createNewRadialProgressChart(salesDoughnut, salesData, doughnutPlugins)
+createNewRadialProgressChart(revenue, revenueData, doughnutPlugins)
+createNewBarChart(salesHistogram, weekSalesData, baselinePlugin)
