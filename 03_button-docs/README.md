@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Buttons and cursors" src="../.github/cover-desafio-03.png" />
+    <img alt="Buttons and cursors" src=".github/cover.png" />
 </h1>
 
 <br>
