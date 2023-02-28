@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Chat" src="../.github/cover-desafio-07.png" />
+    <img alt="Find your block" src=".github/cover.png" />
 </h1>
 
 <br>
