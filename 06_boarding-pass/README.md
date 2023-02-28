@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Chat" src="../.github/cover-desafio-06.png" />
+    <img alt="Boarding pass" src=".github/cover.png" />
 </h1>
 
 <br>
