@@ -22,9 +22,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="nps-card card-shadow nps">
-        <h2 class="card-heading">NPS Geral</h2>
-        <div class="nps__content">
+      <div class="card">
+        <h2 class="card__heading">NPS Geral</h2>
+        <main class="nps__content">
           <svg
             width="54"
             height="55"
@@ -65,50 +65,70 @@
             </defs>
           </svg>
           <p class="nps__score">Excelent!</p>
-        </div>
-        <span class="legend">NPS Score 75</span>
+        </main>
+        <footer class="card__footer">
+          <div class="legend">
+            <span>NPS Score</span>
+            <span>75</span>
+          </div>
+        </footer>
       </div>
-      <div class="kpi-card sales">
-        <h2 class="card-heading">Vendas fechadas</h2>
-        <div class="progress">
+
+      <div class="card">
+        <h2 class="card__heading">Vendas fechadas</h2>
+        <main class="progress">
           <strong class="progress__result">70%</strong>
           <span class="progress__text">alcançadas</span>
           <canvas id="sales-kpi" width="197" height="197"></canvas>
-        </div>
-        <div class="legend">
-          <span class="mark mark--round">Esperadas 100</span
-          ><span class="mark mark--round mark--blue">Alcançadas 70</span>
-        </div>
+        </main>
+        <footer class="card__footer">
+          <div class="legend">
+            <span class="mark mark--round">Esperadas</span>
+            <span>100</span>
+          </div>
+          <div class="legend">
+            <span class="mark mark--round mark--blue">Alcançadas</span>
+            <span>70</span>
+          </div>
+        </footer>
       </div>
-      <div class="kpi-card revenue">
-        <h2 class="card-heading">Faturamento mensal</h2>
-        <div class="progress">
+
+      <div class="card">
+        <h2 class="card__heading">Faturamento mensal</h2>
+        <main class="progress">
           <strong class="progress__result">90%</strong>
           <span class="progress__text">alcançado</span>
           <canvas id="revenue-kpi" width="197" height="197"></canvas>
-        </div>
-        <div class="legend">
-          <span class="mark mark--round">Esperado R$ 70K</span
-          ><span class="mark mark--round mark--orange">Alcançado R$ 63K</span>
-        </div>
+        </main>
+        <footer class="card__footer">
+          <div class="legend">
+            <span class="mark mark--round">Esperado</span>
+            <span>R$ 70K</span>
+          </div>
+          <div class="legend">
+            <span class="mark mark--round mark--orange">Alcançado</span>
+            <span>R$ 63K</span>
+          </div>
+        </footer>
       </div>
-      <div class="sales-chart card-shadow">
-        <h2 class="card-heading">Vendas por dia da semana</h2>
+
+      <div class="card">
+        <h2 class="card__heading">Vendas por dia da semana</h2>
         <div class="chart">
+          <div class="chart__canvas">
+            <canvas id="week-sales-histogram"></canvas>
+          </div>
           <div class="chart__legend">
-            <div>
+            <div class="legend legend--column">
               <p class="mark mark--arrow mark--green">Dia com mais vendas</p>
               <p class="weekday">quarta-feira</p>
             </div>
-            <div>
+            <div class="legend legend--column">
               <p class="mark mark--arrow mark--coral mark--flip-horizontal">
                 Dia com menos vendas
               </p>
               <p class="weekday">domingo</p>
             </div>
-          </div>
-          <div class="chart__canvas">
-            <canvas id="week-sales-histogram"></canvas>
           </div>
         </div>
       </div>
