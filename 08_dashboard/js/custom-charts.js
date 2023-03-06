@@ -79,7 +79,7 @@ export function createGradient(ctx, startAngle, startColor, stopColor) {
 
 const baseline = {
   id: 'baseline',
-  afterDatasetsDraw: function (chart, args, options) {
+  beforeDatasetsDraw: function (chart, args, options) {
     if (chart.config.type !== 'bar') {
       return
     }
