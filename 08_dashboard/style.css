@@ -112,13 +112,13 @@ body {
   position: relative;
   height: 19.7rem;
   width: 19.7rem;
+  z-index: 10;
 }
 
 .progress__result {
   font-weight: 700;
   font-size: 3.4rem;
   position: absolute;
-  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -126,7 +126,6 @@ body {
 
 .progress__text {
   position: absolute;
-  z-index: 10;
   top: 62%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -138,34 +137,34 @@ body {
   align-items: center;
 }
 
-.legend__round-mark,
-.legend__round-mark-blue,
-.legend__round-mark-orange,
-.legend__arrow-up-mark,
-.legend__arrow-down-mark {
+.mark {
   display: flex;
   align-items: center;
 }
 
-.legend__round-mark::before {
+.mark::before {
   content: '';
   display: inline-block;
   align-items: center;
   height: 1.4rem;
   width: 1.4rem;
   margin-right: 0.4rem;
-  border-radius: 50%;
   background: var(--dark-plum);
 }
 
-.legend__round-mark-blue::before {
-  content: '';
-  display: inline-block;
-  align-items: center;
-  height: 1.4rem;
-  width: 1.4rem;
-  margin-right: 0.4rem;
+.mark--round::before {
   border-radius: 50%;
+}
+
+.mark--arrow::before {
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+}
+
+.mark--flip-horizontal::before {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.mark--blue::before {
   background: linear-gradient(
     121.94deg,
     var(--lavender-pink) 15.98%,
@@ -173,14 +172,7 @@ body {
   );
 }
 
-.legend__round-mark-orange::before {
-  content: '';
-  display: inline-block;
-  align-items: center;
-  height: 1.4rem;
-  width: 1.4rem;
-  margin-right: 0.4rem;
-  border-radius: 50%;
+.mark--orange::before {
   background: linear-gradient(
     121.94deg,
     var(--dusty-peach) 15.98%,
@@ -188,32 +180,20 @@ body {
   );
 }
 
-.legend__arrow-up-mark::before {
-  content: '';
-  height: 1.4rem;
-  width: 1.4rem;
-  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-  display: inline-block;
-  background: linear-gradient(
-    180deg,
-    var(--greenish-blue) 0%,
-    var(--eletric-green) 100%
-  );
-  margin-right: 0.4rem;
-}
-
-.legend__arrow-down-mark::before {
-  content: '';
-  height: 1.4rem;
-  width: 1.4rem;
-  display: inline-block;
-  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+.mark--coral::before {
   background: linear-gradient(
     180deg,
     var(--coral-red) 0%,
     var(--light-coral) 100%
   );
-  margin-right: 0.4rem;
+}
+
+.mark--green::before {
+  background: linear-gradient(
+    180deg,
+    var(--greenish-blue) 0%,
+    var(--eletric-green) 100%
+  );
 }
 
 .sales-chart {
