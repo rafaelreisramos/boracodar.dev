@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <main class="weather">
+      <section class="card card__temperature">
+        <img
+          class="overflow-img"
+          src="./assets/weather-cloudy-color.svg"
+          alt="nuvens acinzentadas"
+        />
+
+        <h2 class="location">
+          <img src="./assets/pin.svg" alt="" />
+          Rio do Sul, SC
+        </h2>
+
+        <div class="temperature">
+          <p class="temperature__value">18</p>
+          <p class="temperature__range">
+            <span>22<span>&#176;</span></span
+            ><span>&#160;</span
+            ><span class="temperature__range--min">16<span>&#176;</span></span>
+          </p>
+          <span class="temperature__unit"><span>&#176;</span>C</span>
+        </div>
+
+        <dl class="temperature__statistics">
+          <div class="statistics__card">
+            <img
+              class="statistics__card-img"
+              src="./assets/weather-windy.svg"
+              alt="linhas curvas representado o fluxo de ar"
+            />
+            <div>
+              <dt class="statistics__name">Vento</dt>
+              <dd class="statistics__value">
+                17<span>&#160;</span><span class="statistics__unit">Km/h</span>
+              </dd>
+            </div>
+          </div>
+
+          <div class="statistics__card">
+            <img
+              class="statistics__card-img"
+              src="./assets/weather-humidity.svg"
+              alt="goticulas de água"
+            />
+            <div>
+              <dt class="statistics__name">Umidade</dt>
+              <dd class="statistics__value">
+                31<span>&#160;</span><span class="statistics__unit">%</span>
+              </dd>
+            </div>
+          </div>
+
+          <div class="statistics__card">
+            <img
+              class="statistics__card-img"
+              src="./assets/weather-rainy.svg"
+              alt="nuvem com chuva"
+            />
+            <div>
+              <dt class="statistics__name">Chuva</dt>
+              <dd class="statistics__value">
+                10<span>&#160;</span><span class="statistics__unit">%</span>
+              </dd>
+            </div>
+          </div>
+        </dl>
+      </section>
+
+      <div class="grid">
+        <section class="card card__air-quality">
+          <h2 class="card__title">
+            <img src="./assets/leaf.svg" alt="folha" />
+            Qualidade do ar
+          </h2>
+          <p class="air-quality__classification">Boa</p>
+          <p class="air-quality__value">21</p>
+          <dl class="air-quality__parameters">
+            <div>
+              <dd class="parameter__value">12.9</dd>
+              <dt class="parameter__name">PM2.5</dt>
+            </div>
+            <div>
+              <dd class="parameter__value">12.9</dd>
+              <dt class="parameter__name">PM10</dt>
+            </div>
+            <div>
+              <dd class="parameter__value">2.1</dd>
+              <dt class="parameter__name">SO<sub>2</sub></dt>
+            </div>
+            <div>
+              <dd class="parameter__value">1.4</dd>
+              <dt class="parameter__name">NO<sub>2</sub></dt>
+            </div>
+            <div>
+              <dd class="parameter__value">21.2</dd>
+              <dt class="parameter__name">O<sub>3</sub></dt>
+            </div>
+            <div>
+              <dd class="parameter__value">0.7</dd>
+              <dt class="parameter__name">CO</dt>
+            </div>
+          </dl>
+        </section>
+
+        <section class="card card__sun-time">
+          <h2 class="card__title">
+            <img src="./assets/time.svg" alt="" />
+            Horário do sol
+          </h2>
+          <div class="chart">
+            <span class="chart__sunrise">06:12</span>
+            <span class="chart__sunset">18:52</span>
+            <div class="border"></div>
+            <div class="chart__time">16:01</div>
+            <div class="chart__sun"></div>
+          </div>
+        </section>
+
+        <section class="card card__week-weather">
+          <dl class="week-days">
+            <div class="week-day">
+              <dt>Amanhã</dt>
+              <img
+                class="week-day__weather"
+                src="./assets/weather-cloudy-color.svg"
+                alt="nuvens acinzentadas"
+              />
+              <dd class="week-day__temp">
+                <span class="week-day__temp--max">21<span>&#176;</span></span
+                ><span>&#160;</span
+                ><span class="week-day__temp--min">16<span>&#176;</span></span>
+              </dd>
+            </div>
+            <div class="week-day">
+              <dt>Sexta-Feira</dt>
+              <img
+                class="week-day__weather"
+                src="./assets/weather-sunny-color.svg"
+                alt="sol brilhando"
+              />
+              <dd class="week-day__temp">
+                <span class="week-day__temp--max">28<span>&#176;</span></span
+                ><span>&#160;</span
+                ><span class="week-day__temp--min">20<span>&#176;</span></span>
+              </dd>
+            </div>
+            <div class="week-day">
+              <dt>Sábado</dt>
+              <img
+                class="week-day__weather"
+                src="./assets/weather-rainy-color.svg"
+                alt="nuvem com chuva"
+              />
+              <dd class="week-day__temp">
+                <span class="week-day__temp--max">25<span>&#176;</span></span
+                ><span>&#160;</span
+                ><span class="week-day__temp--min">21<span>&#176;</span></span>
+              </dd>
+            </div>
+            <div class="week-day">
+              <dt>Domingo</dt>
+              <img
+                class="week-day__weather"
+                src="./assets/weather-lightning-color.svg"
+                alt="nuvem com raio"
+              />
+              <dd class="week-day__temp">
+                <span class="week-day__temp--max">20<span>&#176;</span></span
+                ><span>&#160;</span
+                ><span class="week-day__temp--min">14<span>&#176;</span></span>
+              </dd>
+            </div>
+            <div class="week-day">
+              <dt>Segunda-Feira</dt>
+              <img
+                class="week-day__weather"
+                src="./assets/weather-partly-cloudy-color.svg"
+                alt="sol brilhando atrás de uma nuvem"
+              />
+              <dd class="week-day__temp">
+                <span class="week-day__temp--max">24<span>&#176;</span></span
+                ><span>&#160;</span
+                ><span class="week-day__temp--min">18<span>&#176;</span></span>
+              </dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
