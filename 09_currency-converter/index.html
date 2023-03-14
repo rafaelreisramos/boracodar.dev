@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="converter-wrapper">
+        <h1 class="title">Conversor de moedas</h1>
+        <div class="converter">
+          <div class="currency">
+            <input class="amount" />
+            <span class="divider"></span>
+            <div class="select-wrapper">
+              <span id="flag-from" class="flag fi fi-us fis"></span>
+              <select class="select" name="from" id="">
+                <option class="option" value="us" selected>USD</option>
+                <option class="option" value="eu">EUR</option>
+                <option class="option" value="gb">GBP</option>
+                <option class="option" value="ch">CHE</option>
+                <option class="option" value="br">BRL</option>
+              </select>
+            </div>
+          </div>
+          <svg
+            class="converter-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 10H21L17 6M17 14H3L7 18"
+              stroke="#0F172A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="currency">
+            <input class="amount" readonly disabled />
+            <span class="divider"></span>
+            <div class="select-wrapper">
+              <span id="flag-to" class="flag fi fi-br fis"></span>
+              <select class="select" name="to" id="">
+                <option class="option" value="us">USD</option>
+                <option class="option" value="eu">EUR</option>
+                <option class="option" value="gb">GBP</option>
+                <option class="option" value="ch">CHE</option>
+                <option class="option" value="br" selected>BRL</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exchange-rate">
+        <div class="chart">
+          <h2 class="chart__title">Taxa de câmbio</h2>
+          <div class="chart__yaxis">
+            <span>5,3</span>
+            <span>5,2</span>
+            <span>5,1</span>
+            <span>5,0</span>
+          </div>
+          <div class="chart__area">
+            <div class="chart__plot"></div>
+            <div class="point"></div>
+            <div class="lines"></div>
+            <div class="popover">5,12 seg., 13 de fev.</div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="period-selection">
+            <label class="period__label">
+              <input name="period" type="radio" class="input-radio" />
+              <span class="period__text">1D</span>
+            </label>
+            <label class="period__label">
+              <input name="period" type="radio" class="input-radio" />
+              <span class="period__text">5D</span>
+            </label>
+            <label class="period__label">
+              <input name="period" type="radio" class="input-radio" checked />
+              <span class="period__text">1M</span>
+            </label>
+            <label class="period__label">
+              <input name="period" type="radio" class="input-radio" />
+              <span class="period__text">1A</span>
+            </label>
+            <label class="period__label">
+              <input name="period" type="radio" class="input-radio" />
+              <span class="period__text">5A</span>
+            </label>
+            <label class="period__label">
+              <input name="period" type="radio" class="input-radio" />
+              <span class="period__text">Máx</span>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
