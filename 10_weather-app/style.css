@@ -15,25 +15,26 @@ body {
 }
 
 html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Lato', sans-serif;
   font-size: 62.5%;
 }
 
 body {
-  display: grid;
-  place-content: center;
   font-size: 1.6rem;
   line-height: 1.9rem;
   color: #ffffff;
-  background: url(./assets/background.jpg) no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(1rem);
 }
 
 .weather {
-  position: relative;
-  display: flex;
-  gap: 3.2rem;
+  display: grid;
+  place-content: center;
+  gap: 2.4rem;
+  padding: 6.4rem;
+  min-height: 100vh;
+  background: url(./assets/background.jpg) no-repeat center/cover;
+  backdrop-filter: blur(1rem);
 }
 
 .overflow-img {
@@ -146,28 +147,14 @@ body {
   color: #dad8f7;
 }
 
-.grid {
-  display: grid;
-  gap: 2.4rem 2.4rem;
-  grid-template-columns: repeat(2, 27.7rem);
-  grid-template-rows: 24.4rem 1fr;
-  color: #dad8f7;
-}
-
 .card__air-quality {
-  grid-column: 1;
-  grid-row: 1;
   text-align: center;
 }
 
 .card__sun-time {
-  grid-column: 2;
-  grid-row: 1;
 }
 
 .card__week-weather {
-  grid-column: 1/3;
-  grid-row: 2;
   padding: 4rem;
 }
 
@@ -199,8 +186,9 @@ body {
 
 .air-quality__parameters {
   display: flex;
+  justify-content: space-between;
   gap: 1.6rem;
-  margin: 3.2rem 0 1.6rem 1.6rem;
+  margin: 3.2rem 1.6rem 1.6rem 1.6rem;
 }
 
 .parameter__name {
@@ -220,6 +208,7 @@ body {
   position: relative;
   margin-top: 2.4rem;
   margin-inline: auto;
+  margin-bottom: 1.6rem;
   border: 0.1rem solid transparent;
   width: 24.5rem;
   height: 14.8rem;
@@ -280,14 +269,15 @@ body {
 .week-days {
   display: flex;
   gap: 1.2rem;
-  flex: 1;
 }
 
 .week-day {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  flex-shrink: 0;
+  flex-grow: 1;
+  justify-content: space-between;
   gap: 1.6rem;
   font-size: 1.4rem;
   line-height: 1.7rem;
@@ -311,4 +301,19 @@ body {
 
 .week-day__temp--min {
   color: #c2bff4;
+}
+
+@media (min-width: 115.2rem) {
+  .weather {
+    grid-template-columns: 48rem repeat(2, 27.7rem);
+    grid-template-rows: 24.4rem max-content;
+  }
+
+  .card__temperature {
+    grid-row: 1/3;
+  }
+
+  .card__week-weather {
+    grid-column: 2/4;
+  }
 }
