@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login page</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="background"></aside>
+      <main class="content">
+        <img class="logo" src="./assets/logo.svg" alt="vertigo logo" />
+        <h1 class="form-title">Acesse a plataforma</h1>
+        <p class="form-description">
+          Faça login ou registre-se para começar a construir seus projetos ainda
+          hoje.
+        </p>
+        <form class="form">
+          <fieldset class="form-fields">
+            <label class="label">
+              E-mail
+              <div class="input-wrapper">
+                <input
+                  class="input input__email"
+                  name="email"
+                  placeholder="Digite seu email"
+                  type="email"
+                />
+              </div>
+            </label>
+            <label class="label">
+              Senha
+              <div class="input-wrapper">
+                <input
+                  class="input input__password"
+                  name="password"
+                  placeholder="Digite sua senha"
+                  type="password"
+                  disabled
+                />
+                <button class="btn btn--toggle" type="button" disabled>
+                  <img class="icon" src="./assets/eye-off.svg" alt="" />
+                </button>
+              </div>
+            </label>
+          </fieldset>
+          <button class="btn btn--submit" type="submit">Entrar</button>
+        </form>
+        <p class="signup">
+          Ainda não tem uma conta?
+          <a class="signup__link" href="http://">Inscreva-se</a>
+        </p>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
