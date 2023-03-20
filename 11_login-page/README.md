@@ -20,7 +20,7 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
 - Javascript:
 
-- Usado para mudar o ícone e tupi do campo password <-> text para tornar a senha visível, para alterar o ícone e para o evento de submit do formulário para exibir uma mensagem no console.
+- Usado para mudar o ícone e tipo do campo `password <-> text` para tornar a senha visível, para alterar o ícone e para o evento de submit do formulário para exibir uma mensagem no console.
 
 ## 🔖 Layout
 
