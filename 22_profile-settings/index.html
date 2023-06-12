@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Profile Settings</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="card">
+        <header class="user">
+          <img
+            class="avatar"
+            src="https://source.unsplash.com/random/48×48?face"
+            alt="avatar"
+          />
+          <div>
+            <strong class="user__name">Marvin McKinney</strong>
+            <address class="user__email">marvin.mckinney@example.com</address>
+          </div>
+        </header>
+        <main>
+          <dl class="list">
+            <dt class="list__topic">Conta</dt>
+            <dd class="list__item">
+              <a class="link" href="#">
+                <i class="left-icon ph ph-user-circle" aria-hidden="true"></i>
+                Dados pessoais
+                <i class="right-icon ph ph-caret-right"></i>
+              </a>
+            </dd>
+            <dd class="list__item">
+              <a class="link" href="">
+                <i class="left-icon ph ph-key" aria-hidden="true"></i>
+                Informações de login
+                <i class="right-icon ph ph-caret-right"></i>
+              </a>
+            </dd>
+
+            <dt class="list__topic">Preferências</dt>
+            <dd class="list__item">
+              <a class="link" href="">
+                <i class="left-icon ph ph-bell" aria-hidden="true"></i>
+                Notificações
+                <i class="right-icon ph ph-caret-right"></i>
+              </a>
+            </dd>
+            <dd class="list__item">
+              <a class="link" href="">
+                <i
+                  class="left-icon ph ph-person-arms-spread"
+                  aria-hidden="true"
+                ></i>
+                Acessibilidade
+                <i class="right-icon ph ph-caret-right"></i>
+              </a>
+            </dd>
+
+            <dt class="list__topic">Privacidade</dt>
+            <dd class="list__item">
+              <a class="link" href="">
+                <i class="left-icon ph ph-devices" aria-hidden="true"></i>
+                Aparelhos conectados
+                <i class="right-icon ph ph-caret-right"></i>
+              </a>
+            </dd>
+            <dd class="list__item">
+              <a class="link" href="">
+                <i class="left-icon ph ph-user-switch" aria-hidden="true"></i>
+                Contas vinculadas
+                <i class="right-icon ph ph-caret-right" aria-hidden="true"></i>
+              </a>
+            </dd>
+          </dl>
+        </main>
+
+        <footer class="other">
+          <a class="link" href="">
+            <i class="left-icon ph ph-question" aria-hidden="true"></i>
+            Central de ajuda
+          </a>
+
+          <button class="logout" type="button">
+            <i class="left-icon ph ph-sign-out" aria-hidden="true"></i>
+            Sair
+          </button>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
