@@ -26,11 +26,11 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
   Por esta mesma razão passo a utilizar detalhes gráficos dos elementos do layout como `border` e `border-radius` em `px`.
 
-Eu normalmente uso o [Josh Comeau](https://www.joshwcomeau.com) e também o [Kevin Powell]() como referências para `css`.
+  Eu normalmente uso o [Josh Comeau](https://www.joshwcomeau.com) e também o [Kevin Powell]() como referências para `css`.
 
 ## 🎯 Resultado
 
-Você pode visualizar o resultado do projeto [aqui]()
+Você pode visualizar o resultado do projeto [aqui](https://rafaelreisramos.github.io/boracodar.dev/22_profile-settings/).
 
 ## 🔖 Layout
 
