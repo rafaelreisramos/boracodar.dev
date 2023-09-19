@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Smartwatch App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="watch">
+        <div class="mask">
+          <div class="navigation">
+            <h1 class="navigation__title">Dreamy</h1>
+            <time>11:00</time>
+          </div>
+          <div class="carousel">
+            <div class="carousel__item">
+              <img class="carousel__symbol" src="./assets/bed.svg" alt="" />
+              <button class="carousel__btn">
+                <img class="icon" src="./assets/platter.svg" alt="" />
+              </button>
+              <div class="carousel__text">
+                <span>Descanso noturno</span>
+                <span class="carousel__text--accent">Sono REM - 12/09</span>
+              </div>
+            </div>
+            <div class="carousel__item" data-dimmed="true">
+              <img class="carousel__symbol" src="./assets/hammock.svg" alt="" />
+              <button class="carousel__btn">
+                <img class="icon" src="./assets/platter.svg" alt="" />
+              </button>
+              <div class="carousel__text">
+                <span>Soneca à tarde</span>
+                <span class="carousel__text--accent">Sono REM - 12/09</span>
+              </div>
+            </div>
+            <div class="carousel__item" data-dimmed="true">
+              <img class="carousel__symbol" src="./assets/hammock.svg" alt="" />
+              <button class="carousel__btn">
+                <img class="icon" src="./assets/platter.svg" alt="" />
+              </button>
+              <div class="carousel__text">
+                <span>Soneca à tarde</span>
+                <span class="carousel__text--accent">Sono REM - 12/09</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --amethyst: #cda5f8;
+  --opal: #fff;
+  --opal-12: rgba(255, 255, 255, 0.12);
+  --background: #dccdea;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --19-5px: 1.21875rem;
+  --30px: 1.875rem;
+}
+
+#app {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: var(--background);
+  font: 600 var(--17px) / var(--19-5px) 'Inter', sans-serif;
+  color: var(--opal);
+}
+
+.watch {
+  background: url('./assets/smartwatch-background.png') no-repeat;
+  width: 366px;
+  height: 471px;
+  position: relative;
+}
+
+.mask {
+  display: flex;
+  flex-direction: column;
+  width: 205px;
+  height: 251px;
+  position: absolute;
+  left: 73.5px;
+  top: 110.5px;
+  border-radius: 56px;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 16.5px 15.5px 27.5px;
+}
+
+.navigation__title {
+  color: var(--amethyst);
+  font-size: var(--17px);
+  font-weight: 700;
+  line-height: var(--30px);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.carousel__item:last-child {
+  margin-bottom: 80px;
+}
+
+/* "hide" scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.carousel__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  background-color: var(--opal-12);
+  border-radius: 16px;
+  padding: 8px 12px;
+}
+
+.carousel__item[data-dimmed='true'] {
+  opacity: 40%;
+  transform: scale(0.85);
+}
+
+.carousel__symbol {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.carousel__text--accent {
+  color: var(--amethyst);
+  font-size: var(--16px);
+  text-transform: uppercase;
+}
+
+.carousel__btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.carousel__btn img {
+  width: 24px;
+  height: 24px;
+}
